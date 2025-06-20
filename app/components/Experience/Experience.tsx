@@ -99,7 +99,7 @@ const Experience = () => {
         <div className={styles['about-container']}>
           <h3 className={styles['about-container-title']}>Experience</h3>
           {Object.entries(ExperienceData).map(([key, value]) => {
-            return <ExperienceCard key={key} company={key} data={value} />;
+            return <ExperienceCard key={key} data={value} />;
           })}
         </div>
       </Card>

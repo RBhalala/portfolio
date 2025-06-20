@@ -8,19 +8,26 @@ import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
+import { StaticImageData } from 'next/image';
 
 import TimelineDot from '@mui/lab/TimelineDot';
 
 import { TimelineCard } from './TimelineCard';
 import { Paper, styled } from '@mui/material';
-type MyPExperianceProps = {
+type Position = {
+  title: string;
+  details: string;
+  timeFrom: string;
+  timeTo: string;
+};
+type MyExperianceProps = {
   data: {
     company: string,
     country: string,
-    logo: string,
-    positions: []
+    logo: StaticImageData,
+    positions: Position[]
   },
-  company: object;
+  key: string
 };
 
 const StyledTimelineItem = styled(TimelineItem)({
@@ -30,7 +37,7 @@ const StyledTimelineItem = styled(TimelineItem)({
   },
 });
 
-const ExperienceCard = ({ company, data }: MyPExperianceProps) => {
+const ExperienceCard = ({ key, data }: MyExperianceProps) => {
   return (
     <Paper variant="outlined" className={styles['experience-card-container']}>
       <div className={styles['company-section']}>
@@ -38,7 +45,7 @@ const ExperienceCard = ({ company, data }: MyPExperianceProps) => {
           <Image
             className={styles['company-image']}
             src={data.logo}
-            alt={`${company} logo`}
+            alt={`${data.company} logo`}
             objectFit="contain"
             fill={true}
           />

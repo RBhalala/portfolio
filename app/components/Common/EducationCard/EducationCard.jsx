@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './EducationCard.module.scss';
 import Image from 'next/image';
 
-const EducationCard = ({ company, data }) => {
+const EducationCard = ({ data }) => {
   return (
     <div variant="outlined" className={styles['experience-card-container']}>
       <div className={styles['company-section']}>
@@ -10,7 +10,7 @@ const EducationCard = ({ company, data }) => {
           <Image
             className={styles['company-image']}
             src={data.logo}
-            alt={`${company} logo`}
+            alt={`${data.logo} logo`}
             objectFit="contain"
             fill={true}
           />
