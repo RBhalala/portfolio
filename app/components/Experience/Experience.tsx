@@ -8,8 +8,8 @@ import ServifyLogo from '../../images/ServifyLogo.png'
 import B2xLogo from '../../images/B2xLogo.png'
 
 const ExperienceData = {
-  Onramper: {
-    company: 'Nium',
+  Nium_EU: {
+    company: 'Nium EU BV',
     logo: NiumLogo,
     country: 'Amsterdam, North Holland, Netherlands',
     positions: [
@@ -19,7 +19,13 @@ const ExperienceData = {
           "Contributed to the development and enhancement of the Linked Card feature within our flagship product, a staple in the industry for over two decades. Focused on optimizing code quality and implementing best practices to ensure the feature's reliability, security, and maintainability. Played a pivotal role in integrating Anti-Money Laundering (AML) and compliance check functionalities into our product, ensuring full regulatory compliance and safeguarding against fraudulent activitiesContributed to the development and enhancement of the Linked Card feature within our flagship product, a staple in the industry for over two decades. Focused on optimizing code quality and implementing best practices to ensure the feature's reliability, security, and maintainability. Played a pivotal role in integrating Anti-Money Laundering (AML) and compliance check functionalities into our product, ensuring full regulatory compliance and safeguarding against fraudulent activities",
         timeFrom: 'August 2023',
         timeTo: 'Present',
-      },
+      }],
+    },
+  Nium_IN: {
+    company: 'Nium PVT LTD',
+    logo: NiumLogo,
+    country: 'Mumbai, India',
+    positions: [
       {
         title: 'Principal Software Engineer',
         details: `Strategically optimized API performance, resulting in an 80% increase in overall efficiency and a 95% improvement in user experience, ensuring seamless interactions.
@@ -40,7 +46,7 @@ Assumed the role of Technical Owner for the product, guiding the technological e
       }
     ],
   },
-  SyscoLabs: {
+  Servify: {
     company: 'Servify',
     logo: ServifyLogo,
     country: 'Mumbai, India',
@@ -62,7 +68,7 @@ Facilitated collaboration by traveling to Shenzhen to OnePlus Headquarters, wher
       },
     ],
   },
-  Ifs: {
+  B2x: {
     company: 'B2X Care Solutions',
     logo: B2xLogo,
     country: 'Mumbai, India',

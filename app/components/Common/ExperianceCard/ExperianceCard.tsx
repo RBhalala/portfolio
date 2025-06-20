@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import styles from './ExperianceCard.module.scss';
 import Image from 'next/image';
@@ -11,6 +12,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 
 import { TimelineCard } from './TimelineCard';
+import { Paper, styled } from '@mui/material';
 type MyPExperianceProps = {
   data: {
     company: string,
@@ -20,9 +22,17 @@ type MyPExperianceProps = {
   },
   company: object;
 };
+
+const StyledTimelineItem = styled(TimelineItem)({
+  '&::before': {
+    flex: 0,
+    padding: 0,
+  },
+});
+
 const ExperienceCard = ({ company, data }: MyPExperianceProps) => {
   return (
-    <div variant="outlined" className={styles['experience-card-container']}>
+    <Paper variant="outlined" className={styles['experience-card-container']}>
       <div className={styles['company-section']}>
         <div className={styles['company-image-container']}>
           <Image
@@ -41,7 +51,7 @@ const ExperienceCard = ({ company, data }: MyPExperianceProps) => {
           <Timeline className={styles['timeline-root']}>
             {data.positions.map((position, index) => {
               return (
-                <TimelineItem key={index} className={styles['timeline-item']}>
+                <StyledTimelineItem key={index} >
                   <TimelineSeparator>
                     <TimelineDot />
                     <TimelineConnector />
@@ -49,13 +59,13 @@ const ExperienceCard = ({ company, data }: MyPExperianceProps) => {
                   <TimelineContent>
                     <TimelineCard data={position} />
                   </TimelineContent>
-                </TimelineItem>
+                </StyledTimelineItem>
               );
             })}
           </Timeline>
         </div>
       </div>
-    </div>
+    </Paper>
   );
 };
 
