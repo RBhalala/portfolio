@@ -44,7 +44,6 @@ const Contact = () => {
             <Button
               style={{ textTransform: 'none', backgroundColor: '#0A66C2' }}
               variant="contained"
-              case
               endIcon={<LinkedInIcon />}
               href="https://www.linkedin.com/in/ravi-bhalala/"
               target="_blank"
@@ -55,7 +54,6 @@ const Contact = () => {
             <Button
               style={{ textTransform: 'none', backgroundColor: '#141414' }}
               variant="contained"
-              case
               endIcon={<GitHubIcon />}
               href="https://github.com/RBhalala"
               target="_blank"

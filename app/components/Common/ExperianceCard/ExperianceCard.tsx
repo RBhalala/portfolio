@@ -11,8 +11,16 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 
 import { TimelineCard } from './TimelineCard';
-
-const ExperienceCard = ({ company, data }) => {
+type MyPExperianceProps = {
+  data: {
+    company: string,
+    country: string,
+    logo: string,
+    positions: []
+  },
+  company: object;
+};
+const ExperienceCard = ({ company, data }: MyPExperianceProps) => {
   return (
     <div variant="outlined" className={styles['experience-card-container']}>
       <div className={styles['company-section']}>
