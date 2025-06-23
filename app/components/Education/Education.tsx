@@ -3,7 +3,6 @@ import React from 'react';
 
 import styles from './Education.module.scss';
 import EducationCard from '../Common/EducationCard/EducationCard';
-import upgLogo from '../../images/upgLogo.jpg'
 
 const EducationData = [
   {
@@ -12,7 +11,7 @@ const EducationData = [
     timeTo: 'August 2015',
     degree:
       'B.Sc. Information Technology (Specialization – Software Engineering)',
-    logo: upgLogo,
+    logo: './upgLogo.jpg',
   }
 ];
 

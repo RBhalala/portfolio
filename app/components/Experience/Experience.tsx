@@ -3,9 +3,9 @@ import React from 'react';
 
 import styles from './Experience.module.scss';
 import ExperienceCard from '../Common/ExperianceCard/ExperianceCard';
-import NiumLogo from '../../images/NiumLogo.png'
-import ServifyLogo from '../../images/ServifyLogo.png'
-import B2xLogo from '../../images/B2xLogo.png'
+const NiumLogo = './NiumLogo.png';
+const ServifyLogo = './ServifyLogo.png'
+const B2xLogo = './B2xLogo.png'
 
 const ExperienceData = {
   Nium_EU: {

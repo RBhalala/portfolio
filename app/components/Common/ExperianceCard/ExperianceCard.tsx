@@ -8,7 +8,6 @@ import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
-import { StaticImageData } from 'next/image';
 
 import TimelineDot from '@mui/lab/TimelineDot';
 
@@ -24,7 +23,7 @@ type MyExperianceProps = {
   data: {
     company: string,
     country: string,
-    logo: StaticImageData,
+    logo: string,
     positions: Position[]
   },
   key: string

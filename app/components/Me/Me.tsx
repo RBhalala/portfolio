@@ -2,19 +2,16 @@ import React from 'react';
 import styles from './Me.module.scss';
 import Image from 'next/image';
 
-import coverImage from '../../images/cover.jpeg';
-import profileImage from '../../images/profile.jpeg';
-
 const Me = () => {
   return (
     <div className={styles['me']}>
       <div className={styles['me-cover']}>
-        <Image src={coverImage} alt="Cover Image" layout="responsive" />
+        <Image src="./cover.jpeg" alt="Cover Image" layout="responsive" />
       </div>
       <div className={styles['me-data']}>
         <div className={styles['me-data-profile-pic']}>
           <Image
-            src={profileImage}
+            src="./profile.jpeg"
             alt="Cover Image"
             className={styles['image']}
           />
