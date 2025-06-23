@@ -5,12 +5,6 @@ import Education from './components/Education/Education';
 import Contact from './components/Contact/Contact';
 import styles from './styles/Home.module.scss';
 import Me from "./components/Me/Me";
-// import dynamic from "next/dynamic";
-// const About = dynamic(() => import('./components/About/About'), { ssr: false });
-// const Experience = dynamic(() => import('./components/Experience/Experience'), { ssr: false });
-// const Education = dynamic(() => import('./components/Education/Education'), { ssr: false });
-// const Contact = dynamic(() => import('./components/Contact/Contact'), { ssr: false });
-// const Me = dynamic(() => import('./components/Me/Me'), { ssr: false });
 
 
 export default function Home() {
