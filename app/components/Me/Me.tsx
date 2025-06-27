@@ -19,7 +19,7 @@ const Me = () => {
         <div className={styles['name-container']}>
           <h2 className={styles['name']}>Ravi Bhalala</h2>
           <h4 className={styles['profession']}>
-            Staff Software Engineer at Nium | Full-Stack | Fintech | Payments Expert
+            Staff Software Engineer at Nium | Full-Stack | Fintech | Payments Expert | Get Things Done
           </h4>
         </div>
       </div>
