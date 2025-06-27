@@ -15,7 +15,7 @@ import { TimelineCard } from './TimelineCard';
 import { Card, styled } from '@mui/material';
 type Position = {
   title: string;
-  details: string;
+  details: string[];
   timeFrom: string;
   timeTo: string;
 };
