@@ -6,12 +6,12 @@ const Me = () => {
   return (
     <div className={styles['me']}>
       <div className={styles['me-cover']}>
-        <Image src="/cover.png" width={700} height={375} alt="Cover Image" layout="responsive" />
+        <Image src="./cover.png" width={700} height={375} alt="Cover Image" layout="responsive" />
       </div>
       <div className={styles['me-data']}>
         <div className={styles['me-data-profile-pic']}>
           <Image
-            src="/profile.jpeg"
+            src="./profile.jpeg"
             alt="Cover Image"
             width={400} height={400}
             className={styles['image']}
