@@ -12,7 +12,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 
 import { TimelineCard } from './TimelineCard';
-import { Paper, styled } from '@mui/material';
+import { Card, styled } from '@mui/material';
 type Position = {
   title: string;
   details: string;
@@ -38,13 +38,13 @@ const StyledTimelineItem = styled(TimelineItem)({
 
 const ExperienceCard = ({ key, data }: MyExperianceProps) => {
   return (
-    <Paper variant="outlined" className={styles['experience-card-container']}>
+    <Card variant="outlined" className={styles['experience-card-container']}>
       <div className={styles['company-section']}>
         <div className={styles['company-image-container']}>
           <Image
             className={styles['company-image']}
             src={data.logo}
-            alt={`${data.company} logo`}
+            alt={`${data.company}`}
             objectFit="contain"
             fill={true}
           />
@@ -71,7 +71,7 @@ const ExperienceCard = ({ key, data }: MyExperianceProps) => {
           </Timeline>
         </div>
       </div>
-    </Paper>
+    </Card>
   );
 };
 
