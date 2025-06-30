@@ -5,6 +5,7 @@ import Education from './components/Education/Education';
 import Contact from './components/Contact/Contact';
 import styles from './styles/Home.module.scss';
 import Me from "./components/Me/Me";
+import Events from "./components/Events/Events";
 
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
         <About />
         <Experience />
         <Education />
+        <Events />
       </main>
     </>
   );
