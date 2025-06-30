@@ -16,6 +16,14 @@ const events = [
     image: './iit.jpeg',
   },
   {
+    title: 'AWS Architecting Training- 2022',
+    details:
+      'Completed 3 days Training in AWS Archetecting organised by Nium & learned detailed features of AWS',
+    tech: 'AWS',
+    link: 'https://aws.amazon.com/training/classroom/architecting-on-aws/',
+    image: './aws.png',
+  },
+  {
     title: 'Recognized for Excellence and Successful Project Transition - 2021',
     details:
       'Received multiple awards for outstanding performance in 2020-21. Successfully took over responsibilities from the Lithuania team and enhanced the portal to support increased volume and scalability',

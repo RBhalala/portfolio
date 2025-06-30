@@ -9,6 +9,7 @@
       position: relative;
       height: 15rem;
       width: 40%;
+      flex-shrink: 0;
     }
   
     &-data {
@@ -80,10 +81,6 @@
         margin-top: 2rem;
         position: relative;
         height: 10rem;
-        flex-shrink: 0;
-        img {
-          border-radius: 0.5rem;
-        }
       }
   
       &-data {
