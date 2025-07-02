@@ -10,7 +10,7 @@ type IEventCard = {
   details: string;
   tech: string;
   image: string;
-  link: string;
+  link?: string;
   awards?: string[];
 }
 type MyEventProp = {

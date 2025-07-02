@@ -7,6 +7,16 @@ import EventCard from '../Common/EventCard/EventCard';
 const events = [
   {
     title:
+      `Hackathon Winner 2024`,
+    details:
+      'Won the hackathon, found the business problem and hack a way to build a solution in 2 days.',
+    tech: 'Hackathon | Tech',
+    awards: [],
+    link: '',
+    image: './hackathon.png',
+  },
+  {
+    title:
       `Hiring for Nium - IIT Bhubaneswar`,
     details:
       'Part of the recruitment panel at Indian Institute of Technology Bhubaneswar (IIT Bhubaneswar) for recruiting IIT freshers in Nium',
